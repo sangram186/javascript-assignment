@@ -38,7 +38,7 @@ function brickCalculator(floor){
 // tinyFriend
 var friendsName = ['Rofik', 'Sofik', 'Jobbar', 'Borkot', 'Abul', 'Kolimuddin', 'Kulsum Begum'];
 
-function tinyFriend(name) {
+function tinyFriends(name) {
     var tinyName = '';
     for(var i = 1; i < name.length; i++) {
         if(name[i].length < name[i-1].length){
