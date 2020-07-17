@@ -1,6 +1,6 @@
 // feetToMile
 function feetToMile(feet) {
-    if(feet == 0 || feet == -1){  // It's for bonus marks....
+    if(feet == 0 || feet == -1){        // It's for bonus marks....
         return 'Please inpute a valid number'; 
     }
     var mileConvert = feet / 5280;
@@ -11,7 +11,7 @@ function feetToMile(feet) {
 
 // woodCalculator
 function woodCalculator(chair, table, bed) {
-    if(chair == null || table == null || bed == null){ // It's for bonus marks....
+    if(chair == null || table == null || bed == null){      // It's for bonus marks....
         return 'Please tell me the correct ammound';
     }
     var woodForChair = chair * 1;
@@ -23,7 +23,7 @@ function woodCalculator(chair, table, bed) {
 
 // brickCalculator
 function brickCalculator(floor){
-    if(floor == 0 || floor == -1) { // It's for bonus marks....
+    if(floor == 0 || floor == -1) {      // It's for bonus marks....
         return 'Tell me the correct floor';
     } else if(floor <= 10) {
         var brickCount = 15 * 1000 * floor;
@@ -36,9 +36,12 @@ function brickCalculator(floor){
 }
 
 // tinyFriend
-var friendsName = ['Rofik', 'Sofik', 'Jobbar', 'Borkot', 'Abul', 'Kolimuddin', 'Kulsum Begum'];
+var friendsName = ['Rofik', 'Sofik', 'Jobbar', 'Borkot', 'Abul', 'Kolimuddin', 'Kulsum Begum']; // example array..
 
-function tinyFriend(name) {
+function tinyFriends(name) {
+    if(name == []) {                    // It's for bonus marks....
+        return "Array can't be empty";
+    }
     var tinyName = '';
     for(var i = 1; i < name.length; i++) {
         if(name[i].length < name[i-1].length){
