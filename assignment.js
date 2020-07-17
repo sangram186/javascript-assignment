@@ -39,10 +39,12 @@ function brickCalculator(floor){
 var friendsName = ['Rofik', 'Sofik', 'Jobbar', 'Borkot', 'Abul', 'Kolimuddin', 'Kulsum Begum']; // example array..
 
 function tinyFriends(name) {
+    var tinyName = '';
+
     if(name == []) {                    // It's for bonus marks....
         return "Array can't be empty";
     }
-    var tinyName = '';
+    
     for(var i = 1; i < name.length; i++) {
         if(name[i].length < name[i-1].length){
             tinyName = (name[i]);
